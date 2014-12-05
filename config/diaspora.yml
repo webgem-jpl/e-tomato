@@ -233,7 +233,7 @@ configuration: ## Section
     ## The diaspora* HQ account keeps users up to date with news about Diaspora.
     ## If you set another auto-follow account (for example your podmin account),
     ## please consider resharing diaspora* HQ's posts for your pod's users!
-    autofollow_on_join_user: 'info@tomatopolis.com'
+    #autofollow_on_join_user: 'info@tomatopolis.com'
 
     ## Invitation settings
     invitations: ## Section
