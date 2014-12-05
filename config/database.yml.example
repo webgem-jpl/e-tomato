@@ -12,16 +12,16 @@ postgres: &postgres
   adapter: postgresql
   host: localhost
   port: 5432
-  username: postgres
-  password:
+  username: zetzagmltcotbm
+  password: ixRkkAOuYUYO4Lt0JqFCah5ahB
   encoding: unicode
 
 # Comment the the mysql line and uncomment the postgres line
 # if you want to use postgres
 common: &common
   # Choose one of the following
-  <<: *mysql
-  #<<: *postgres
+  #<<: *mysql
+  <<: *postgres
 
   # Should match environment.sidekiq.concurrency
   #pool: 25

@@ -5,15 +5,15 @@ app/assets/images/custom/
 
 
 # Configuration files
-config/diaspora.yml
-config/heroku.yml
-config/initializers/secret_token.rb
+#config/diaspora.yml
+#config/heroku.yml
+#config/initializers/secret_token.rb
 config/redis.conf
 config/deploy_config.yml
 .bundle
 vendor/bundle/
 vendor/cache/
-config/database.yml
+#config/database.yml
 .rvmrc_custom
 .rvmrc.local
 
