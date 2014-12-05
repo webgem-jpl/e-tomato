@@ -36,13 +36,13 @@ configuration: ## Section
     ## However changing http to https is okay and has no consequences.
     ## If you do change the URL, you will have to start again as the URL
     ## will be hardcoded into the database.
-    #url: "https://example.org/"
+    url: "http://tomatopolis.com/"
     
     ## Set the bundle of certificate authorities (CA) certificates.
     ## This is specific to your operating system.
     ## Examples (uncomment the relevant one or add your own):
     ## For Debian, Ubuntu, Archlinux, Gentoo (package ca-certificates):
-    #certificate_authorities: '/etc/ssl/certs/ca-certificates.crt'
+    certificate_authorities: '/etc/ssl/certs/ca-certificates.crt'
     ## For CentOS, Fedora:
     #certificate_authorities: '/etc/pki/tls/certs/ca-bundle.crt'
     
@@ -99,11 +99,11 @@ configuration: ## Section
     ## to handle uploaded pictures (disabled by default)
     s3: ## Section
 
-      #enable: true
-      #key: 'change_me'
-      #secret: 'change_me'
-      #bucket: 'my_photos'
-      #region: 'us-east-1'
+      enable: true
+      key: 'AKIAIROLDDKNBLPVUWVA'
+      secret: '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'
+      bucket: 'tomatopolis'
+      region: 'us-east-1'
 
       ## Use max-age header on Amazon S3 resources (default=true)
       ## When true, this allows locally cached images to be served for up to
@@ -204,24 +204,24 @@ configuration: ## Section
     statistics: ## Section
 
       ## Local user total and 6 month active counts
-      #user_counts: true
+      user_counts: true
 
       ## Local post total count
-      #post_counts: true
-      #comment_counts: true
+      post_counts: true
+      comment_counts: true
   
   ## General settings
   settings: ## Section
   
     ## Pod name (default="diaspora*")
     ## The pod name displayed in various locations, including the header.
-    #pod_name: "diaspora*"
+    pod_name: "Tomatopolis"
 
     ## Allow registrations (default=true)
     ## Set this to false to prevent people from signing up for your pod
     ## without an invitation. Note that this needs to be set to true
     ## (or commented out) to enable the first registration (you).
-    #enable_registrations: true
+    enable_registrations: true
     
     ## Auto-follow on sign-up (default=true)
     ## Users will automatically follow a specified account on creation.
@@ -233,7 +233,7 @@ configuration: ## Section
     ## The diaspora* HQ account keeps users up to date with news about Diaspora.
     ## If you set another auto-follow account (for example your podmin account),
     ## please consider resharing diaspora* HQ's posts for your pod's users!
-    #autofollow_on_join_user: 'diasporahq@joindiaspora.com'
+    autofollow_on_join_user: 'info@tomatopolis.com'
 
     ## Invitation settings
     invitations: ## Section
@@ -284,7 +284,7 @@ configuration: ## Section
 
       ## Enable captcha (default=true)
       ## Set this to false if you don't want to use captcha for signup process.
-      #enable: true
+      enable: false
 
       ## Captcha image size (default='120x20')
       #image_size: '120x20'
@@ -337,16 +337,16 @@ configuration: ## Section
     ## OAuth credentials for Facebook:
     facebook: ## Section
 
-      #enable: true
-      #app_id: 'abcdef'
-      #secret: 'change_me'
+      enable: true
+      app_id: '288263908040075'
+      secret: '40339496d08dd024e72f5405deb17f1b'
     
     ## OAuth credentials for Twitter:
     twitter: ## Section
 
-      #enable: true
-      #key: 'abcdef'
-      #secret: 'change_me'
+      enable: true
+      key: 'pd2vmklnBWtnbvOTtuPyE4Tdu'
+      secret: 'EOm7USAVwxeaENfnpMd6cBICvBrMkvZSHs0EMgHaPBDi32phJw'
     
     ## OAuth credentials for Tumblr
     tumblr: ## Section
