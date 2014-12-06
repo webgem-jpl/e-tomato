@@ -4,7 +4,7 @@
 .container-fluid#login
   .row-fluid
     .span12.text-center
-         = link_to image_tag( 'image/tomato/logo.jpg'), 'http://www.tomatopolis.com'
+         = link_to image_tag( 'images/tomato/logo.png'), 'http://www.tomatopolis.com'
   .row-fluid
     .span4.offset4
       = form_for resource, :as => resource_name, :url => session_path(resource_name), :html => {:class => 'form-signin'}, :autocomplete => 'off' do |f|
