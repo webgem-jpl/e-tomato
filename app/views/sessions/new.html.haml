@@ -4,10 +4,7 @@
 .container-fluid#login
   .row-fluid
     .span12.text-center
-      .branding-asterisk
-      %h1
-        = AppConfig.settings.pod_name
-
+        %a{ href= "/"+I18n.locale.to_s %img(id="logo" class="center-block" src="/images/logo.png" alt="Tomatopolis">)}
   .row-fluid
     .span4.offset4
       = form_for resource, :as => resource_name, :url => session_path(resource_name), :html => {:class => 'form-signin'}, :autocomplete => 'off' do |f|
