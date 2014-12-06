@@ -6,7 +6,7 @@
         %span.icon-bar
         %span.icon-bar
       %a.btn.btn-success.pull-left{:href => "/users/sign_in"} Login
-      %a{ href= "/"+I18n.locale.to_s %img(id="logo" class="center-block" src="/images/logo.png" alt="Tomatopolis">)}
+      = link_to image_tag( 'image/tomato/logo.jpg'), 'http://www.tomatopolis.com'
       .nav-collapse
         %ul.nav
           %li
